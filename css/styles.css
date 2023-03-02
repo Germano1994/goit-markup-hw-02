@@ -1,129 +1,258 @@
-.list {
-    list-style: none;
+:root {
+}
 
+.list {
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4fd;
+  background-color: #ffffff;
 }
-
-.logo {
-    text-decoration: none;
-    font-family: 'Raleway' sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.3;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #2E2F42;;
-    }
-
-    .accent {
-        text-decoration: none;
-        font-family: 'Raleway' sans-serif;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.3;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4D5AE5;
-        
-    }
-
-    .web {
-        text-decoration: none;
-        font-family: 'Raleway' sans-serif;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.3;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #F4F4FD;
-    }
-
-    .text {
-        color: #E7E9FC;
-    }
-
-    .hero {
-        color:#FFFFFF
-    }
-
-    .suptitle-theme-dark {
-        background-color: #2E2F42;;
-    }
-
-/* =============COMPONENTS================= */
-
-.modal-btn {
-font-family: 'Roboto' sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
-cursor: pointer;
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-    background-color: #4D5AE5;
-    color: #FFFFFF;
-}
-
-/* ================/COMPONENTS==================== */
 
 /* ===============HEADER============== */
+.logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+.accent {
+  color: #4d5ae5;
+}
 
 .menu-link {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #2E2F42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
 }
 
 .contact-email,
 .contact-phone {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contact-email:hover,
+.contact-email:focus {
+  color: #404bbf;
+}
+
+.contact-phone:hover,
+.contact-phone:focus {
+  color: #404bbf;
+}
+
+/* ============ /HEADER============ */
+
+/* ============ HERO============ */
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
     letter-spacing: 0.02em;
-    color: #434455;
-    }
+    color: #ffffff;
+  }
 
-   
+ .hero {
+  background-color: #2e2f42;
+} 
 
-    /* ============ /HEADER============ */
+.hero-btn {
+    width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+}
 
-/* =================HERO=============== */
+.hero-btn:hover,
+.hero-btn:focus {
+    background: #404BBF;
+}
+/* ============ /HERO============ */
 
-    .main-title {
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-letter-spacing: 0.02em;
-    }
+/* ===============DISCRIPTION================ */
 
-    /* ================= /HERO================ */
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
-    /* =============OUR QUALITIES============== */
+.subtitle-discrip {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42; 
+}
 
-.section-description {
+.discription-text {
+    font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+}
+
+/* ===============/DISCRIPTION================ */
+
+/* What are we doing */
+
+.team-work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+/* ==========/What are we doing============= */
+
+/* =======TEAM========== */
+
+.team {
+    background-color: #f4f4fd;
+}
+
+.title-team {
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #2E2F42;
+}
+
+.team-mait {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #2E2F42;
+
+}
+
+.team-spec {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+
+}
+
+.team-card {
+    width: 264px;
+    background: #FFFFFF;
+}
+
+/* ===========/TEAM============= */
+
+/* ==========FOOTER============== */
+
+.footer {
+    background: #2E2F42;
+}
+
+.footer-logo {
+    font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #F4F4FD;
+}
+
+.footer-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #E7E9FC;
+}
+
+/* =============COMPONENTS================= */
+
+.buttons {
+    background: #f4f4fd;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  
+    color: #4d5ae5;
+    cursor: pointer;
+  }
+  
+  .buttons:hover,
+  .buttons:focus {
+    background: #404bbf;
+    color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .nav {
+    font-style: normal;
+  }
+  
+  .gallery {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+  }
+  
+  /* ================/COMPONENTS==================== */
+
+/* =============OUR QUALITIES============== */
+
+.section-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
